@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--cor-azul);
+}
+:root{
+    --cor-rosa: #ae0464;
+    --cor-azul: #073886;
+    --cor-roxo: #71056f;
+    --cor-verde: #1fe516;
+    --cor-preto: #191919;
+}
+.conteiner{
+    width: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+.icone{
+    width: 80px;
+    height: 80px;
+    background-image: url('./icons\ pra\ css/star-solid-full.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: anima linear infinite;
+    animation-duration: calc(300s / var(--i));
+}
+@keyframes anima{
+    0%{
+        transform: translateY(100vh) scale(0) rotate(0deg);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1) rotate(360deg);
+    }
+}
