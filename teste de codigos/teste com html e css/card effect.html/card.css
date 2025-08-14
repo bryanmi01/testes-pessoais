@@ -1,0 +1,89 @@
+body{
+    background: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    gap: 20px;
+    font-family: 'Courier New', Courier;
+}
+.card-html,
+.card-java,
+.card-css{
+    position: relative;
+    display: inline-block;
+}
+.card{
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 15px, 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: transform 0,3 ease;
+}
+.card-html::after{
+    content: "HTML é a estrutura de uma pagina web.";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: #00bcd4;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.card-html:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+/*css abaixo*/
+.card-css::after{
+    content: "CSS é a estilização de uma pagina web.";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: #00bcd4;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.card-css:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+/*JAVA abaixo*/
+.card-java::after{
+    content: "JAVA  é o banco de dados de uma web.";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: #00bcd4;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.card-java:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}

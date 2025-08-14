@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-preto);
+}
+:root{
+    --cor-rosa: #ae0464;
+    --cor-azul: #1d52a8;
+    --cor-roxo: #71056f;
+    --cor-verde: #1fe516;
+    --cor-preto: #191919;
+}
+.conteiner{
+    max-width: 550px;
+    min-width: 350px;
+}
+.carrosel{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.2rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.card{
+    background: linear-gradient(-450deg, var(--cor-roxo), var(--cor-azul));
+    min-height: 350px;
+    min-width: 450px;
+    scroll-snap-type: center;
+    border-radius: 40px;
+}
